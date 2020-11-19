@@ -1,34 +1,13 @@
 [
     {
-        "name": "content",
-        "label": "Content",
-        "tab": "CONTENT",
-        "type": "group",
+        "name": "heading",
+        "label": "Heading",
         "required": false,
         "locked": false,
-        "children": [
-            {
-                "name": "heading",
-                "label": "Heading",
-                "required": false,
-                "locked": false,
-                "validation_regex": "",
-                "allow_new_line": false,
-                "show_emoji_picker": false,
-                "type": "text",
-                "default" : "Ptulae recubans sub tegmine fagi dolor."
-            },
-            {
-                "name": "text",
-                "label": "Content",
-                "required": false,
-                "locked": false,
-                "validation_regex": "",
-                "allow_new_line": false,
-                "show_emoji_picker": false,
-                "type": "richtext",
-                "default" : "Cum sociis natoque penatibus et magnis dis parturient. Donec sed odio operae, eu vulputate felis rhoncus. Pellentesque habitant morbi tristique senectus et netus. Phasellus laoreet lorem vel dolor tempus vehicula. Petierunt uti sibi concilium totius Galliae in diem certam indicere."
-            }
-        ]
+        "validation_regex": "",
+        "allow_new_line": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "default" : "Ptulae recubans sub tegmine fagi dolor."
     }
 ]
