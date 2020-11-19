@@ -29,14 +29,15 @@ To setup the starting point and use HubSpot's **Local development tools**, follo
 
 1. Create a free CMS sandbox account https://app.hubspot.com/signup/standalone-cms-developer
 2. Install Node.js, which enables HubSpot's local development tools. Versions 8.9.1 or higher are supported. [https://nodejs.org/en/](https://nodejs.org/en/) (Choose LTS Option)
-3. Download this repository as a .zip file.
-4. Extract the zip file into a newly created `igomoon-coding-task` folder on your computer. You should now have the `developer-coding-task` folder within that new folder.
-5. Using the command line, cd into the `igomoon-coding-task` folder and run `hs init`. This will connect the tools to your HubSpot account follow the instruction to your [Personal Access Key Page](https://app.hubspot.com/l/personal-access-key)
-6. Once connected you can then run the command, this is going to perform and inital upload and now watch for changes within your `developer-coding-task` as you complete the task
+3. Open you termin and run `npm install -g @hubspot/cms-cli` to install hubspot tools.
+4. Download this repository as a .zip file.
+5. Extract the zip file into a newly created `igomoon-coding-task` folder on your computer. You should now have the `developer-coding-task` folder within that new folder.
+6. Using the command line, cd into the `igomoon-coding-task` folder and run `hs init`. This will connect the tools to your HubSpot account follow the instruction to your [Personal Access Key Page](https://app.hubspot.com/l/personal-access-key)
+7. Once connected you can then run the command, this is going to perform and inital upload and now watch for changes within your `developer-coding-task` as you complete the task
 ```
 hs watch developer-coding-task developer-coding-task --initial-upload
 ```
-7. Begin the task below. Run `hs --help` and familiarise yourself with the HubSpot tools available to you.
+8. Begin the task below. Run `hs --help` and familiarise yourself with the HubSpot tools available to you.
 
 ### Boilerplate Notes
 
