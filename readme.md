@@ -10,6 +10,11 @@ NOT including setup (Instructions for set up below), you should allow yourself *
 
 Please see the "**Submission Instructions**" at the base of this document.
 
+<br>
+
+### Working with the Hubspot CMS
+At iGoMoon, our job is not to maintain a customer's website, our role is instead to create Hubspot assets (Templates and Modules etc), so that our customers can create the content themselves. Before continuing on this task, you should make sure you understand Hubspot's Building Blocks.
+
 <br><br>
 
 ## Assumed Knowledge
@@ -84,38 +89,38 @@ For the task above you will be scored out of **200 points** taking into account 
 
 ### Bonus Points
 
-Please see more details for each task below the table. There is NO set order to these tasks, just do what you can, as best you can.
+Please see more details for each task below the table. There is NO set order to these tasks, just do what you can, as best you can. **TIP:** For max points, don't just copy + paste. 
 
 | Task 									| Points |
 |-										|-|
 | Add a body class 						| 2 |
-| Add help text to module fields 		| 4 |
-| Add an Icon for your Module			| 6 |
-| New module field 						| 6 |
+| Add help text to module fields 		| 3 |
+| Add an Icon for your Module			| 10 |
+| New module field 						| 10 |
 | Add a page header						| 10 |
 | Use a Macro							| 15 |
-| Use a Partial							| 15 |
-| Abstract the page to a use a layout	| 30 |
-| Use SCSS in your workflow				| 30 |
-| Use Git Version Control				| 40 |
-| Implement HUBL drag and Drop areas	| 40 |
-| Create a new module					| 50 |
+| Use Git Version Control				| 15 |
+| Use SCSS in your workflow				| 15 |
+| Create a new module					| 40 |
+| Use a Partial							| 40 |
+| Abstract the page to a use a layout	| 40 |
+| Implement HUBL drag and Drop areas	| 50 |
 | Use a Hubspot form instead			| 50 |
 | **Possible Bonus Points** 			| **300** |
 
 <br>
 
 #### Add a body class
-- This requires essential HTML knowledge. Add your name as a css safe class eg. `your-name`
+- This requires essential HTML knowledge. Add your full name as a css safe class eg. `your-name`
 
 #### Add help text	
-- EVERY Module field should include some help text. Add in some helpful text to your fields.
+- EVERY Module field that is added should include some help text. Add in some helpful text to your fields.
 
 #### Add an Icon for your Module
-- You can add a custom SVG icon your module, add it to the optin module and go that extra mile for the customer.
+- Add a custom SVG icon asset and configure your optin module to use it, adding things like icons to make iGoMoon modules less generic are the extra mile for customers.
 
 #### New module field 	
-- The customer has come back to you and said *"Sometimes we need the name field and other times we dont, can we make it so it's optional?"*. Fulfil their need and implement a toggle switch to allow the name field to be used in the form.
+- The customer has come back to you and said *"Sometimes we need the name field and other times we dont, can we make it so it's optional?"*. Fulfil their need and implement an on/off toggle switch to allow the name field to be used in the form.
 
 #### Add a page header
 - Use Bootstrap and add a navbar to your page template. Take the iGoMoon logo from our site and insert it. No need for the links to go anywhere.
@@ -123,20 +128,20 @@ Please see more details for each task below the table. There is NO set order to 
 #### Use a Macro
 - Macros are "repeatable output functions" for the HubSpot CMS, make one and use it to show some privacy policy text under the submit button. This way it could be used for other modules also.
 
+#### Use Git Version Control
+- We track everything we do. If you use Git, show us your skills from the start and fork our repository before you begin your task. We'll be interested in wehre you choose to make your commits.
+
+#### Use Sass/ SCSS in your workflow
+- We love and use SCSS all the time, implement it into your workflow but don’t compromise your workflow to use it.
+
+#### Create a new module	
+- Ready to step up? Create your own working module with fields and CSS + JS and add it to your page.
+
 #### Use a Partial
 - Partials allow you to insert another piece of code into your HUBL. Headers, Footer and shared elements like sidebars are great examples of this. If you added the page header above, then take your header and turn it into a HUBL partial. **Note the difference bettween a normal and a global partial.**
 
 #### Abstract the page to a use a layout
 - Layouts are a powerful part of the HUBL language, allowing you to limit repetiive code. Take your page template and abstract it to layout with blocks. 
-
-#### Use Sass/ SCSS in your workflow
-- We love and use SCSS all the time, implement it into your workflow but don’t compromise your workflow to use it.
-
-#### Use Git Version Control
-- We track everything we do. If you use Git, show us your skills from the start and fork our repository before you begin your task. We'll be interested in wehre you choose to make your commits.
-
-#### Create a new module	
-- Ready to step up? Create your own working module with fields and CSS + JS and add it to your page.
 
 #### Implement HUBL drag and Drop areas	
 - HubSpot allows you to define Drag and Drop areas within your page template. If you're really up for a challenge, then implement it for your module/s.
