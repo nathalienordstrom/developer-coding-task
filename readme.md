@@ -8,7 +8,13 @@ For this task you will be given a scenario based on what a customer has requeste
 
 NOT including setup (Instructions for set up below), you should allow yourself **2-3 hours for the main task**.
 
-Please see the "**Submission Instructions**" at the base of this document.
+Please see the "**[Submission Instructions](##Submission%20Instructions)**" at the base of this document.
+
+To get started, check out the video below:  
+
+<br>
+
+[![iGoMoon Developer Coding Task](https://play.vidyard.com/YXp2Du9vjwSJ4Yx9eSD7ZS.jpg)](http://videos.igomoon.com/watch/YXp2Du9vjwSJ4Yx9eSD7ZS?)
 
 <br>
 
