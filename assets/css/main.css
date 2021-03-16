@@ -1,1 +1,107 @@
- 
+body {
+    background-color: rgb(114, 167, 136);
+    transition: 0.5 ease;
+    position: relative;
+}
+
+
+.field-email,
+.field-name,
+.field-finish {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 50px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.5 ease;
+
+}
+
+.field-email i,
+.field-name i,
+.field-finish i {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.field-email input,
+.field-name input,
+.field-finish input {
+    background: none;
+    border: none;
+    flex: 1;
+    height: 100%;
+    outline: none;
+}
+
+.fa-heart {
+    color: red;
+}
+
+p {
+    padding-top: 20px;
+}
+
+div.inactive {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 50%)
+}
+
+div.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-50%, -50%)
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-50%, -50%) rotate(2deg);
+    }
+
+    20% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) rotate(2deg);
+    }
+
+    40% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(2deg);
+    }
+
+    60% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(-50%, -50%) rotate(2deg);
+    }
+
+    80% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    90% {
+        transform: translate(-50%, -50%) rotate(2deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}

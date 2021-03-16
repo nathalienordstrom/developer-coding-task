@@ -21,12 +21,13 @@
     {# Styles #}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ get_asset_url('./assets/css/main.css') }}">
+    <script src="https://kit.fontawesome.com/2d4b9471e2.js" crossorigin="anonymous"></script>
+
 </head>
 
 {% set body_class = [builtin_body_classes] %}
 
 <body class="{{ body_class|join(' ')|trim }}">
-
     <div class="site-container">
         <main id="main-content">
             {% module "module_form_optin_20201119",
