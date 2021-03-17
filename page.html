@@ -29,11 +29,19 @@
 
 <body class="{{ body_class|join(' ')|trim }}">
     <div class="site-container">
+       
         <main id="main-content">
             {% module "module_form_optin_20201119",
-				path="./modules/form-optin",
-				label="Form Optin"
-			%}
+            path="./modules/form-optin",
+            label="Form Optin"
+        %}
+            {% module "module",
+            path="./modules/Module",
+            label="module"
+        %}
+      
+        
+            
         </main>
     </div>
 

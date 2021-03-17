@@ -1,0 +1,85 @@
+.content {
+  
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px 0 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2e4152;
+}
+
+.text-copy {
+  padding: 0 50px 50px 50px;
+  text-align: center;  
+  box-shadow: 0 6px 6px rgba(0,0,0,0.2);
+}
+.bottom-row {
+   display:flex;
+   flex-direction: row;
+  justify-content: center;
+}
+.box {
+   box-shadow: 0 6px 6px rgba(0,0,0,0.2);
+   display:flex;
+   flex-direction: row;
+   width: 200px;
+   margin: 20px;
+  padding: 20px;
+  
+}
+.box-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;  
+}
+
+.icon {
+  color: #2e4152;
+  font-size: 40px;
+  text-align: center;
+}
+
+.box-title {
+ font-size: 20px;
+  padding:0;
+}
+
+@media (min-width: 340px) and (max-width:700px) {
+  .content {
+  padding: 20px;
+}
+
+.text-copy {
+  padding: 0 10px 20px 10px;
+}
+.bottom-row {
+   display:flex;
+   flex-direction: column;
+}
+.box {
+   display:flex;
+   flex-direction: column;
+}
+.box-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;  
+}
+}
+
+@media (min-width: 701px) and (max-width:1024px) {
+.content {
+
+  padding: 0 30px 0 30px;
+
+}
+  .text-copy {
+  padding: 0 50px 50px 50px;
+  margin-bottom: 20px;
+}
+
+.box {
+  display:flex;
+  flex-direction: column;
+  padding: 10px;
+}
+}

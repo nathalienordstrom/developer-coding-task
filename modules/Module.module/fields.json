@@ -1,0 +1,82 @@
+[ {
+  "id" : "78ab932d-67ba-8c80-2408-be542ee9765b",
+  "name" : "section_title",
+  "label" : "Section title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Our service"
+}, {
+  "id" : "a83bc72d-dff1-ebf3-faf9-df247b0eed7f",
+  "name" : "text_copy",
+  "label" : "Text copy",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2>We are the best</h2>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet eget enim vel placerat. Maecenas ut lacinia massa. Nullam aliquam augue eget leo consequat ornare. Vestibulum vehicula tempor mi non finibus. Duis rhoncus eros ut est venenatis dapibus. Donec lacinia nulla mattis, fringilla leo quis, fringilla justo. Nullam dignissim nec elit quis fringilla. Curabitur nec felis turpis. Donec lacus purus, dignissim non sodales sed, interdum a lectus. Vestibulum congue justo nisl, imperdiet maximus metus ullamcorper ut. Aenean sagittis, felis id scelerisque malesuada, eros leo dapibus metus, vel semper sapien nisl eleifend sapien. Quisque ornare felis in dolor iaculis, in pharetra purus consequat.</p>"
+}, {
+  "id" : "186a590c-cf4c-c797-77d7-185025c9b027",
+  "name" : "box_content_group",
+  "label" : "Box Content Gorup",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "fb7beb92-d51e-d320-9462-f15e3760af99",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "<i class=\"fas fa-rocket\"></i>"
+  }, {
+    "id" : "07adcd7b-6048-5f63-0a2c-ae88a997b2b4",
+    "name" : "box_title",
+    "label" : "Box Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Be Brave"
+  }, {
+    "id" : "4f7068b8-0536-7bcd-e188-2a0c016db616",
+    "name" : "subtitle",
+    "label" : "Subtitle",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "It's like riding a roller coaster. At first it's scary, but then you'll say \"that wasn't bad\"."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "icon" : "<i class=\"fas fa-rocket\"></i>",
+    "box_title" : "Be Brave",
+    "subtitle" : "It's like riding a roller coaster. At first it's scary, but then you'll say \"that wasn't bad\"."
+  }, {
+    "icon" : "<i class=\"fas fa-rocket\"></i>",
+    "box_title" : "Be Brave",
+    "subtitle" : "It's like riding a roller coaster. At first it's scary, but then you'll say \"that wasn't bad\"."
+  }, {
+    "icon" : "<i class=\"fas fa-rocket\"></i>",
+    "box_title" : "Be Brave",
+    "subtitle" : "It's like riding a roller coaster. At first it's scary, but then you'll say \"that wasn't bad\"."
+  } ]
+} ]

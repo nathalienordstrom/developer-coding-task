@@ -2,6 +2,7 @@ body {
     background-color: rgb(114, 167, 136);
     transition: 0.5 ease;
     position: relative;
+    top:0;
 }
 
 
@@ -105,3 +106,4 @@ div.active {
         transform: translate(-50%, -50%) rotate(0deg);
     }
 }
+

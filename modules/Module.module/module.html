@@ -1,0 +1,33 @@
+    <div class="content">
+      <div class="top-row">
+        <div class="text-copy">
+         {% inline_rich_text field="text_copy" value="{{ module.text_copy }}" %}
+        </div>
+      </div>
+      <div class="bottom-row">
+        
+        {% for item in module.box_content_group %}
+        <div class="box">
+          <div class="icon">
+            {{ item.icon }}
+          </div>
+          <div class="box-text">
+            
+          <div class="box-title">
+            <h4>
+              {{ item.box_title }}
+            </h4>
+          </div>
+          <div class="subtitle">
+            <p>
+           {{ item.subtitle }}
+            </p>
+            </div>
+          </div>
+        </div>
+  {% endfor %}
+      </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/2d4b9471e2.js" crossorigin="anonymous"></script>
