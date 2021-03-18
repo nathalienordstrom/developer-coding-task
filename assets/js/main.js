@@ -23,7 +23,7 @@ function animatedForm() {
 function validationEmail(email) {
     const validation = /^[^\s@]+@[^\s@]+$/;
     if (validation.test(email.value)) {
-        error("rgb(114, 167, 136)");
+        error("white");
         return true;
     } else {
         error("rgb(189, 87, 87");
@@ -34,10 +34,11 @@ function validateUser(user) {
     if (user.value.length < 2) {
         error("rgb(189, 87, 87");
     } else {
-        error("rgb(114, 167, 136)");
+        error("white");
         return true;
     }
 }
+
 
 function nextSlide(parent, nextForm) {
     parent.classList.add("inactive");
