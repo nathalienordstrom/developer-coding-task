@@ -1,0 +1,21 @@
+[ {
+  "id" : "c66bf601-1c3f-6a47-f9af-7161d8e851ea",
+  "name" : "image_field",
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent00.net/hubfs/14511056/logo-1.png",
+    "alt" : "logo-1",
+    "loading" : "lazy",
+    "width" : 968,
+    "height" : 282,
+    "max_width" : 968,
+    "max_height" : 282
+  }
+} ]

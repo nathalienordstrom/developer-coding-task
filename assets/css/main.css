@@ -2,7 +2,7 @@ body {
     background-color: white;
     transition: 0.5 ease;
     position: relative;
-
+    border:solid red 2px;
 }
 
 #main-content {

@@ -15,6 +15,7 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     {# Favicon #}
     {% if site_settings.favicon_src %}
+    {{ required_css(get_asset_url('/boilerplate/css/layouts.css')) }}
     <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
     {# Includes #}
     {{ standard_header_includes }}
@@ -28,17 +29,28 @@
 
 {% set body_class = [builtin_body_classes] %}
 
-<body class="{{ body_class|join(' ')|trim }}">
+<body class="nathalie-nordstrom">
     <div class="site-container">
 
         <main id="main-content">
+            <div class="navbar>">
+                <!--This is a navbar with the iGoMoon logo -->
+                {% module "navbar",
+            path="./modules./navbar",
+            label="navbar"
+        %}
+            </div>
+            <!--This is a drag and drop area -->
+            {% dnd_area "header-dnd-area" %}{% end_dnd_area %}
             <div class="module-one">
+                <!-- This is the form module-->
                 {% module "module_form_optin_20201119",
             path="./modules/form-optin",
             label="Form Optin"
         %}
             </div>
             <div class="module-two">
+                <!-- This is the content module with text and business values-->
                 {% module "module",
             path="./modules/Module",
             label="module"
