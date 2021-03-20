@@ -15,7 +15,10 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     {# Favicon #}
     {% if site_settings.favicon_src %}
-    {{ required_css(get_asset_url('/boilerplate/css/layouts.css')) }}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
     <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
     {# Includes #}
     {{ standard_header_includes }}
@@ -32,14 +35,14 @@
 <body class="nathalie-nordstrom">
     <div class="site-container">
 
-        <main id="main-content">
+        <main class="main-content">
             <div class="navbar>">
                 <!--This is a navbar with the iGoMoon logo -->
                 {% module "navbar",
-            path="./modules./navbar",
+            path="./modules/navbar",
             label="navbar"
         %}
-            </div>
+    </div>
             <!--This is a drag and drop area -->
             {% dnd_area "header-dnd-area" %}{% end_dnd_area %}
             <div class="module-one">
@@ -56,7 +59,9 @@
             label="module"
         %}
             </div>
-
+            <!--This is a drag and drop area -->
+            {% dnd_area "footer-dnd-area" %}{% end_dnd_area %}
+            </div>
         </main>
     </div>
 
