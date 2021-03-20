@@ -14,6 +14,7 @@
     <meta name="description" content="{{ content.meta_description }}">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     {# Favicon #}
+
     {% if site_settings.favicon_src %}
 
     <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
@@ -33,16 +34,18 @@
     <div class="site-container">
 
         <main class="main-content">
+
             <div class="navbar>">
                 <!--This is a navbar with the iGoMoon logo -->
                 {% module "navbar",
             path="./modules/navbar",
             label="navbar"
         %}
-    </div>
+            </div>
             <!--This is a drag and drop area -->
-            {% dnd_area "header-dnd-area" %}{% end_dnd_area %}
-            <div class="module-one">
+       
+          {% dnd_area "header-dnd-area" %}{% end_dnd_area %}       
+          <div class="module-one">
                 <!-- This is the form module-->
                 {% module "module_form_optin_20201119",
             path="./modules/form-optin",
@@ -56,10 +59,8 @@
             label="module"
         %}
             </div>
-            <!--This is a drag and drop area -->
-            {% dnd_area "footer-dnd-area" %}{% end_dnd_area %}
-            </div>
-        </main>
+
+    </main>
     </div>
 
     {# Includes #}
