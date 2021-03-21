@@ -15,9 +15,6 @@ body {
 
 .module-one {
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .module-two {
@@ -36,7 +33,8 @@ form {
 .field-email,
 .field-name,
 .field-finish {
-    position: relative;
+    position: absolute;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
@@ -138,7 +136,7 @@ div.active {
     .field-email,
     .field-name,
     .field-finish {
-        top: 8%;
+        top: 15%;
         width: 300px;
     }
 }
@@ -148,6 +146,6 @@ div.active {
     .field-email,
     .field-name,
     .field-finish {
-        top: 15%;
+        top: 25%;
     }
 }

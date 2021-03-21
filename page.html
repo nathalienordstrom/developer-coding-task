@@ -17,6 +17,14 @@
 
     {% if site_settings.favicon_src %}
 
+    {{ require_css(get_asset_url("../../css/layout.css")) }}
+    {{ require_css(get_asset_url("../../css/main.css")) }}
+    {{ require_css("https://fonts.googleapis.com/css?family=Merriweather:400,700|Lato:400,700&display=swap") }}
+    {{ require_js(get_asset_url("../../js/main.js")) }}
+    {{ require_css(get_asset_url(template_css)) }}
+
+    {{ require_css(get_asset_url("../../css/theme-overrides.css")) }}
+
     <link rel="shortcut icon" href="{{ site_settings.favicon_src }}" />{% endif %}
     {# Includes #}
     {{ standard_header_includes }}
@@ -31,41 +39,44 @@
 {% set body_class = [builtin_body_classes] %}
 
 <body class="nathalie-nordstrom">
-    <div class="site-container">
+    <main class="main-content">
 
-        <main class="main-content">
-
-            <div class="navbar>">
-                <!--This is a navbar with the iGoMoon logo -->
-                {% module "navbar",
+        <div class="navbar>">
+            <!--This is a navbar module with the iGoMoon logo -->
+            {% module "navbar",
             path="./modules/navbar",
             label="navbar"
         %}
-            </div>
-            <!--This is a drag and drop area -->
-       
-          {% dnd_area "header-dnd-area" %}{% end_dnd_area %}       
-          <div class="module-one">
-                <!-- This is the form module-->
-                {% module "module_form_optin_20201119",
+        </div>
+        <!--This is a drag and drop area -->
+        {% dnd_area "header-dnd-area" %}{% end_dnd_area %}
+
+
+        {% block header %}
+        {% global_partial path='./templates/partials/header.html' %}
+        {% endblock header %}
+
+        <div class="module-one">
+            <!-- This is the form module-->
+            {% module "module_form_optin_20201119",
             path="./modules/form-optin",
             label="Form Optin"
         %}
-            </div>
-            <div class="module-two">
-                <!-- This is the content module with text and business values-->
-                {% module "module",
+        </div>
+        <div class="module-two">
+            <!-- This is the content module with text and business values-->
+            {% module "module",
             path="./modules/Module",
             label="module"
         %}
-            </div>
-
+        </div>
+        {% dnd_area "footer-dnd-area" %}{% end_dnd_area %}
     </main>
-    </div>
+
 
     {# Includes #}
     {{ standard_footer_includes }}
-
+    {{ require_js(get_asset_url('../../js/main.js')) }}
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
